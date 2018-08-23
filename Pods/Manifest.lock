@@ -1,0 +1,18 @@
+PODS:
+  - Bolts/Tasks (1.8.4)
+  - Masonry (1.0.2)
+  - Parse (1.14.4):
+    - Bolts/Tasks (~> 1.8)
+
+DEPENDENCIES:
+  - Masonry
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Parse: b0aa91d2c435e53d4a9af26e741e014c9b35c42e
+
+PODFILE CHECKSUM: 2fa758a80d7d51280a0c5599e0974475ddc5cd4d
+
+COCOAPODS: 1.4.0
