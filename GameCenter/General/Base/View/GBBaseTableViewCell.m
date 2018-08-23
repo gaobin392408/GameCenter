@@ -2,7 +2,7 @@
 //  GBBaseTableViewCell.m
 //  GameCenter
 //
-//  Created by 高斌 on 2018/8/22.
+//  Created by 高斌 on 2018/8/23.
 //  Copyright © 2018年 高斌. All rights reserved.
 //
 
@@ -18,6 +18,11 @@
 - (void)setCellData:(GBBaseModel *)data
 {
     
+}
+
+- (CGSize)systemLayoutSizeFittingSizeWithCompressSize
+{
+   return [self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
 }
 
 @end

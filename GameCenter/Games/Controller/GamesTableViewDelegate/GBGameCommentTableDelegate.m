@@ -2,7 +2,7 @@
 //  GBGameCommentTableDelegate.m
 //  GameCenter
 //
-//  Created by 高斌 on 2018/8/22.
+//  Created by 高斌 on 2018/8/23.
 //  Copyright © 2018年 高斌. All rights reserved.
 //
 
@@ -19,7 +19,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"comment";
+    return @"Comment";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -41,12 +41,28 @@
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60.0f;
+    static GBGameCommentTableViewCell *testCell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        testCell = [[GBGameCommentTableViewCell alloc]init];
+        [testCell setupSubView];
+    });
+    
+    GBGameCommentModel *tmpModel =(GBGameCommentModel *)[self.viewModel.dataArray objectAtIndex:indexPath.row];
+    [testCell setCellData:tmpModel];
+    
+    
+    if(tmpModel.cellHeight <= 0){
+        CGFloat tmpHight = [testCell systemLayoutSizeFittingSizeWithCompressSize].height;
+        tmpModel.cellHeight = tmpHight;
+    }
+    
+    return tmpModel.cellHeight;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 30.0f;
+    return 20.0f;
 }
 
 @end
