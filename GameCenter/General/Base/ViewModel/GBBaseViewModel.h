@@ -22,14 +22,14 @@ typedef void(^FailureBlock)(NSError *err);
                             success:(SuccessBlock)success
                             failure:(FailureBlock)failure;
     
-- (void)getNetworkDataWithClass:(Class)class
-                        success:(SuccessBlock)success
-                        failure:(FailureBlock)failure;
+- (void)getNetworkDataWithClassName:(NSString *)className
+                            success:(SuccessBlock)success
+                            failure:(FailureBlock)failure;
 
-- (void)getNetWorkDataWithClass:(Class)class
-                      Condition:(NSDictionary *)condition
-                        success:(SuccessBlock)success
-                        failure:(FailureBlock)failure;
+- (void)getNetWorkDataWithClassName:(NSString *)className
+                          Condition:(NSDictionary *)condition
+                            success:(SuccessBlock)success
+                            failure:(FailureBlock)failure;
 @end
 
 

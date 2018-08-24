@@ -18,7 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"Y7LfslaNFxyOwxiLC4NTYUgaPYFDhMD5res9yFAX" clientKey:@"9FlhbbjTxQbGBQO7pkyMxUyvfYg0ic5TjGCTzd9a"];
+    
+    [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration>  _Nonnull configuration) {
+        configuration.applicationId = @"Y7LfslaNFxyOwxiLC4NTYUgaPYFDhMD5res9yFAX";
+        configuration.clientKey = @"9FlhbbjTxQbGBQO7pkyMxUyvfYg0ic5TjGCTzd9a";
+        configuration.server = @"https://parseapi.back4app.com/";
+        
+    }]];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

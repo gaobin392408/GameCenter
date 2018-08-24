@@ -10,4 +10,9 @@
 
 @interface Game : NSObject
 
+@property (nonatomic, retain) NSString *gameId;
+@property (nonatomic, retain) NSString *image;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *price;
+    
 @end

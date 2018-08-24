@@ -12,12 +12,12 @@
 @implementation GBBaseViewModel
 
 #pragma mark - GBQueryProtocol
-- (void)getNetworkDataWithClass:(Class)class
-                        success:(SuccessBlock)success
-                        failure:(FailureBlock)failure
+- (void)getNetworkDataWithClassName:(NSString *)className
+                            success:(SuccessBlock)success
+                            failure:(FailureBlock)failure
 {
     weakSelf(wSelf);
-    PFQuery *query = [PFQuery queryWithClassName:NSStringFromClass(class)];
+    PFQuery *query = [PFQuery queryWithClassName:className];
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if(error){
             failure(error);
@@ -30,13 +30,13 @@
     }];
 }
     
-- (void)getNetWorkDataWithClass:(Class)class
-                      Condition:(NSDictionary *)condition
-                        success:(SuccessBlock)success
-                        failure:(FailureBlock)failure
+- (void)getNetWorkDataWithClassName:(NSString *)className
+                          Condition:(NSDictionary *)condition
+                            success:(SuccessBlock)success
+                            failure:(FailureBlock)failure;
 {
     weakSelf(wSelf);
-    PFQuery *query = [PFQuery queryWithClassName:NSStringFromClass(class)];
+    PFQuery *query = [PFQuery queryWithClassName:className];
     
     for (NSString *key in condition) {
         [query whereKey:key equalTo:[condition objectForKey:key]];

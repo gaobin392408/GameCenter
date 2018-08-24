@@ -53,7 +53,7 @@
     
     
     if(tmpModel.cellHeight <= 0){
-        CGFloat tmpHight = [testCell systemLayoutSizeFittingSizeWithCompressSize].height;
+        CGFloat tmpHight = [testCell systemLayoutSizeFittingSizeWithCompressSize].height + 1;
         tmpModel.cellHeight = tmpHight;
     }
     
@@ -62,7 +62,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 20.0f;
+    return 40.0f;
 }
 
 @end

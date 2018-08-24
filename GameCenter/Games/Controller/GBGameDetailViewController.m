@@ -25,9 +25,12 @@
 {
     [super viewDidLoad];
     
+    [self setNavBarTitle:self.gameModel.name];
+    
     [self setupTableView];
     
     [self getGameCommentDataList];
+    
 }
 
 #pragma mark - private method
@@ -37,7 +40,9 @@
     self.tableView.delegate = self.tableViewDelegate;
     self.tableView.dataSource = self.tableViewDelegate;
     self.tableView.allowsSelection = NO;
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableHeaderView = self.headerView;
+    [self.headerView setSubViewDataWithModel:self.gameModel];
     
     self.commentViewModel = [[GBGameCommentViewModel alloc]init];
     self.tableViewDelegate.viewModel = self.commentViewModel;
@@ -48,15 +53,15 @@
 {
     NSMutableDictionary *condition = [NSMutableDictionary dictionary];
     [condition setObject:self.gameModel.gameId forKey:@"gameId"];
-    
+
     [self.commentViewModel getNetworkDataWithCondition:condition success:^{
-        
+
         [self.tableView reloadData];
-        
+
     } failure:^(NSError *err) {
-        
+
         NSLog(@"getGameCommentDataList error. code = %ld", (long)err.code);
-        
+
     }];
     
 }
@@ -66,7 +71,7 @@
 - (GBGameHeaderView *)headerView
 {
     if (!_headerView) {
-        _headerView = [[GBGameHeaderView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 80)];
+        _headerView = [[GBGameHeaderView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 150)];
         [_headerView setupSubView];
     }
     return _headerView;

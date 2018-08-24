@@ -15,6 +15,7 @@
 
 #import "Masonry.h"
 #import "Parse.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #import "GBProjectCom.h"
 

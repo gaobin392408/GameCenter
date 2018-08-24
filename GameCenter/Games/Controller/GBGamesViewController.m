@@ -19,6 +19,7 @@
 
 @implementation GBGamesViewController
 
+#pragma mark - life cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,9 +28,11 @@
     
     [self getGamesDataList];
 }
-
+    
+#pragma mark - private method
 - (void)setupTableView
 {
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableViewDelegate = [[GBGamesTableViewDelegate alloc]init];
     self.tableView.delegate = self.tableViewDelegate;
     self.tableView.dataSource = self.tableViewDelegate;
@@ -51,17 +54,17 @@
 
 - (void)getGamesDataList
 {
+    
     weakSelf(wSelf);
     [self.gameViewModel getNetworkData:^{
-        
+
         [wSelf.tableView reloadData];
 
     } failure:^(NSError *err) {
-        
+
         NSLog(@"getGameDataList error. errCode = %ld", (long)err.code);
 
     }];
-    
     
 }
 

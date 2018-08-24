@@ -10,6 +10,5 @@
 
 @interface GBGameHeaderView : GBBaseView
 
-- (void)setupSubView;
 
 @end

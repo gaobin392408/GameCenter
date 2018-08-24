@@ -7,6 +7,7 @@
 //
 
 #import "GBBaseViewModel.h"
+#import "GBGameCommentModel.h"
 
 
 @class GBCommentFrame;

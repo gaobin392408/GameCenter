@@ -7,6 +7,13 @@
 //
 
 #import "GBGameHeaderView.h"
+#import "GBGameModel.h"
+
+@interface GBGameHeaderView()
+
+    @property (nonatomic, strong) UIImageView *topImageView;
+
+@end
 
 
 @implementation GBGameHeaderView
@@ -14,10 +21,17 @@
 - (void)setupSubView
 {
     weakSelf(wSelf);
-   UIImageView *gameImageView = [UIImageView allocAndToSuperView:self];
-   [gameImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+   self.topImageView = [UIImageView allocAndToSuperView:self];
+   [self.topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
        make.edges.equalTo(wSelf);
    }];
+}
+
+- (void)setSubViewDataWithModel:(GBBaseModel *)data
+{
+    GBGameModel *gameModel = (GBGameModel *)data;
+    
+    [self.topImageView sd_setImageWithURL:[NSURL URLWithString:gameModel.image] placeholderImage:[UIImage imageNamed:@"default"]];
 }
 
 

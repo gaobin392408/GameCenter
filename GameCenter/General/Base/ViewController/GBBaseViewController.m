@@ -14,15 +14,6 @@
 
 @implementation GBBaseViewController
 
-#pragma mark - init
-//- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-//{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if(self){
-//        self.hidesBottomBarWhenPushed = YES;
-//    }
-//    return self;
-//}
 
 #pragma mark - life cycle
 
@@ -34,8 +25,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+}
+    
 @end
 
 

@@ -16,6 +16,5 @@
 
 - (void)setSubViewDataWithModel:(GBBaseModel *)data;
 
-- (void)setSubViewDataWithViewModel:(GBBaseViewModel *)data;
 
 @end

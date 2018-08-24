@@ -29,6 +29,7 @@ CGFloat const GBCommentAvarWH = 30.0f;
 {
     _commentModel = commentModel;
     
+    // 头像
     CGFloat avatarX = GBCommentHorizontalSpace;
     CGFloat avatarY = GBCommentVerticalSpace;
     CGFloat avatarW = GBCommentAvarWH;
@@ -36,7 +37,21 @@ CGFloat const GBCommentAvarWH = 30.0f;
     
     self.avarFrame = CGRectMake(avatarX, avatarY, avatarW, avatarH);
     
-    // 以下省略
+    // 昵称
+    
+    CGFloat nickNameX = CGRectGetMaxX(self.avarFrame) + GBCommentHorizontalSpace;
+    CGFloat nickNameY = avatarY;
+    CGFloat nickNameW = kWindowW - nickNameX - GBCommentHorizontalSpace;
+    CGFloat nickNameH = avatarH * .5f;
+    
+    self.nickNameFrame = CGRectMake(nickNameX, nickNameY, nickNameW, nickNameH);
+    
+    // 评论
+    CGFloat commentX = nickNameX;
+    CGFloat commnetY = CGRectGetMaxY(self.nickNameFrame);
+    CGFloat commnetW = nickNameW;
+    CGFloat commentH = [commentModel.comment boundingRectWithSize:CGSizeMake(commnetW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:nil context:nil].size.height;
+    self.commentFrame = CGRectMake(commentX, commnetY, commnetW, commentH);
     
     self.cellHeight = CGRectGetMaxY(self.commentFrame) + GBCommentVerticalSpace;
 }
