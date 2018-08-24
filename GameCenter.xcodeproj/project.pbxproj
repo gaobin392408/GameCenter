@@ -7,25 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		241E0106212E6D2800D05D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E0105212E6D2800D05D3E /* AppDelegate.m */; };
-		241E0109212E6D2800D05D3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E0108212E6D2800D05D3E /* ViewController.m */; };
-		241E010C212E6D2800D05D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241E010A212E6D2800D05D3E /* Main.storyboard */; };
-		241E010E212E6D2800D05D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241E010D212E6D2800D05D3E /* Assets.xcassets */; };
-		241E0111212E6D2800D05D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241E010F212E6D2800D05D3E /* LaunchScreen.storyboard */; };
-		241E0114212E6D2800D05D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E0113212E6D2800D05D3E /* main.m */; };
+		243C3CD3212E7B4600D3E193 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3A8E212E7B4400D3E193 /* UIView+Additional.m */; };
+		243C3CD4212E7B4600D3E193 /* GBBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3A92212E7B4400D3E193 /* GBBaseViewModel.m */; };
+		243C3CD5212E7B4600D3E193 /* GBBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3A97212E7B4400D3E193 /* GBBaseTableViewCell.m */; };
+		243C3CD6212E7B4600D3E193 /* GBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3A98212E7B4400D3E193 /* GBBaseView.m */; };
+		243C3CD7212E7B4600D3E193 /* GBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3A9B212E7B4400D3E193 /* GBBaseModel.m */; };
+		243C3CD8212E7B4600D3E193 /* GBBaseTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3A9F212E7B4400D3E193 /* GBBaseTableViewDelegate.m */; };
+		243C3CD9212E7B4600D3E193 /* GBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AA1212E7B4400D3E193 /* GBBaseViewController.m */; };
+		243C3CDA212E7B4600D3E193 /* GBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AA4212E7B4400D3E193 /* GBTabBarController.m */; };
+		243C3CDB212E7B4600D3E193 /* GBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AA5212E7B4400D3E193 /* GBTableViewController.m */; };
+		243C3CDC212E7B4600D3E193 /* GBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AA7212E7B4400D3E193 /* GBNavigationController.m */; };
+		243C3CDD212E7B4600D3E193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243C3AAB212E7B4400D3E193 /* Assets.xcassets */; };
+		243C3CDE212E7B4600D3E193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243C3AAC212E7B4400D3E193 /* LaunchScreen.storyboard */; };
+		243C3CDF212E7B4600D3E193 /* GBProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AB1212E7B4400D3E193 /* GBProfilViewController.m */; };
+		243C3CE0212E7B4600D3E193 /* GBFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AB8212E7B4400D3E193 /* GBFunctionViewController.m */; };
+		243C3CE1212E7B4600D3E193 /* GBBankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3ABF212E7B4400D3E193 /* GBBankCardViewController.m */; };
+		243C3CE2212E7B4600D3E193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AC5212E7B4400D3E193 /* AppDelegate.m */; };
+		243C3CE3212E7B4600D3E193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AC8212E7B4400D3E193 /* main.m */; };
+		243C3CE4212E7B4600D3E193 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243C3ACA212E7B4400D3E193 /* Info.plist */; };
+		243C3CE5212E7B4600D3E193 /* GBGameViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3ACD212E7B4400D3E193 /* GBGameViewModel.m */; };
+		243C3CE6212E7B4600D3E193 /* GBGameCommentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3ACE212E7B4400D3E193 /* GBGameCommentViewModel.m */; };
+		243C3CE7212E7B4600D3E193 /* GBGameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AD2212E7B4400D3E193 /* GBGameDetailViewController.m */; };
+		243C3CE8212E7B4600D3E193 /* GBGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AD3212E7B4400D3E193 /* GBGamesViewController.m */; };
+		243C3CE9212E7B4600D3E193 /* GBGamesTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AD7212E7B4400D3E193 /* GBGamesTableViewDelegate.m */; };
+		243C3CEA212E7B4600D3E193 /* GBGameCommentTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AD8212E7B4400D3E193 /* GBGameCommentTableDelegate.m */; };
+		243C3CEB212E7B4600D3E193 /* GBGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3ADC212E7B4400D3E193 /* GBGameModel.m */; };
+		243C3CEC212E7B4600D3E193 /* GBGameCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3ADD212E7B4400D3E193 /* GBGameCommentModel.m */; };
+		243C3CED212E7B4600D3E193 /* GBGamesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AE4212E7B4400D3E193 /* GBGamesTableViewCell.m */; };
+		243C3CEE212E7B4600D3E193 /* GBGameHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AE5212E7B4400D3E193 /* GBGameHeaderView.m */; };
+		243C3CEF212E7B4600D3E193 /* GBGameCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C3AE6212E7B4400D3E193 /* GBGameCommentTableViewCell.m */; };
+		2442ED5E212EB14C00E72877 /* GBCommentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442ED5D212EB14C00E72877 /* GBCommentFrame.m */; };
+		721E0E49EDDD1497DBBB6CDC /* libPods-GameCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9A926952A177FC5484A6EA /* libPods-GameCenter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		241E0101212E6D2800D05D3E /* GameCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		241E0104212E6D2800D05D3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		241E0105212E6D2800D05D3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		241E0107212E6D2800D05D3E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		241E0108212E6D2800D05D3E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		241E010B212E6D2800D05D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		241E010D212E6D2800D05D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		241E0110212E6D2800D05D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		241E0112212E6D2800D05D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		241E0113212E6D2800D05D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		243C3A8E212E7B4400D3E193 /* UIView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additional.m"; sourceTree = "<group>"; };
+		243C3A8F212E7B4400D3E193 /* UIView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additional.h"; sourceTree = "<group>"; };
+		243C3A92212E7B4400D3E193 /* GBBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBaseViewModel.m; sourceTree = "<group>"; };
+		243C3A93212E7B4400D3E193 /* GBBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBaseViewModel.h; sourceTree = "<group>"; };
+		243C3A95212E7B4400D3E193 /* GBBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBaseTableViewCell.h; sourceTree = "<group>"; };
+		243C3A96212E7B4400D3E193 /* GBBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBaseView.h; sourceTree = "<group>"; };
+		243C3A97212E7B4400D3E193 /* GBBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBaseTableViewCell.m; sourceTree = "<group>"; };
+		243C3A98212E7B4400D3E193 /* GBBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBaseView.m; sourceTree = "<group>"; };
+		243C3A9A212E7B4400D3E193 /* GBBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBaseModel.h; sourceTree = "<group>"; };
+		243C3A9B212E7B4400D3E193 /* GBBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBaseModel.m; sourceTree = "<group>"; };
+		243C3A9E212E7B4400D3E193 /* GBBaseTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBaseTableViewDelegate.h; sourceTree = "<group>"; };
+		243C3A9F212E7B4400D3E193 /* GBBaseTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBaseTableViewDelegate.m; sourceTree = "<group>"; };
+		243C3AA0212E7B4400D3E193 /* GBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTableViewController.h; sourceTree = "<group>"; };
+		243C3AA1212E7B4400D3E193 /* GBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBaseViewController.m; sourceTree = "<group>"; };
+		243C3AA3212E7B4400D3E193 /* GBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTabBarController.h; sourceTree = "<group>"; };
+		243C3AA4212E7B4400D3E193 /* GBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTabBarController.m; sourceTree = "<group>"; };
+		243C3AA5212E7B4400D3E193 /* GBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTableViewController.m; sourceTree = "<group>"; };
+		243C3AA7212E7B4400D3E193 /* GBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBNavigationController.m; sourceTree = "<group>"; };
+		243C3AA8212E7B4400D3E193 /* GBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBNavigationController.h; sourceTree = "<group>"; };
+		243C3AA9212E7B4400D3E193 /* GBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBaseViewController.h; sourceTree = "<group>"; };
+		243C3AAB212E7B4400D3E193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		243C3AAD212E7B4400D3E193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		243C3AB1212E7B4400D3E193 /* GBProfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBProfilViewController.m; sourceTree = "<group>"; };
+		243C3AB2212E7B4400D3E193 /* GBProfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBProfilViewController.h; sourceTree = "<group>"; };
+		243C3AB8212E7B4400D3E193 /* GBFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBFunctionViewController.m; sourceTree = "<group>"; };
+		243C3AB9212E7B4400D3E193 /* GBFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBFunctionViewController.h; sourceTree = "<group>"; };
+		243C3ABF212E7B4400D3E193 /* GBBankCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBBankCardViewController.m; sourceTree = "<group>"; };
+		243C3AC0212E7B4400D3E193 /* GBBankCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBBankCardViewController.h; sourceTree = "<group>"; };
+		243C3AC4212E7B4400D3E193 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		243C3AC5212E7B4400D3E193 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		243C3AC7212E7B4400D3E193 /* GBProjectCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBProjectCom.h; sourceTree = "<group>"; };
+		243C3AC8212E7B4400D3E193 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		243C3AC9212E7B4400D3E193 /* GameCenter.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenter.pch; sourceTree = "<group>"; };
+		243C3ACA212E7B4400D3E193 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243C3ACD212E7B4400D3E193 /* GBGameViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameViewModel.m; sourceTree = "<group>"; };
+		243C3ACE212E7B4400D3E193 /* GBGameCommentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameCommentViewModel.m; sourceTree = "<group>"; };
+		243C3ACF212E7B4400D3E193 /* GBGameCommentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameCommentViewModel.h; sourceTree = "<group>"; };
+		243C3AD0212E7B4400D3E193 /* GBGameViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameViewModel.h; sourceTree = "<group>"; };
+		243C3AD2212E7B4400D3E193 /* GBGameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameDetailViewController.m; sourceTree = "<group>"; };
+		243C3AD3212E7B4400D3E193 /* GBGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGamesViewController.m; sourceTree = "<group>"; };
+		243C3AD5212E7B4400D3E193 /* GBGameCommentTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameCommentTableDelegate.h; sourceTree = "<group>"; };
+		243C3AD6212E7B4400D3E193 /* GBGamesTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGamesTableViewDelegate.h; sourceTree = "<group>"; };
+		243C3AD7212E7B4400D3E193 /* GBGamesTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGamesTableViewDelegate.m; sourceTree = "<group>"; };
+		243C3AD8212E7B4400D3E193 /* GBGameCommentTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameCommentTableDelegate.m; sourceTree = "<group>"; };
+		243C3AD9212E7B4400D3E193 /* GBGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGamesViewController.h; sourceTree = "<group>"; };
+		243C3ADA212E7B4400D3E193 /* GBGameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameDetailViewController.h; sourceTree = "<group>"; };
+		243C3ADC212E7B4400D3E193 /* GBGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameModel.m; sourceTree = "<group>"; };
+		243C3ADD212E7B4400D3E193 /* GBGameCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameCommentModel.m; sourceTree = "<group>"; };
+		243C3ADE212E7B4400D3E193 /* GBGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameModel.h; sourceTree = "<group>"; };
+		243C3ADF212E7B4400D3E193 /* GBGameCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameCommentModel.h; sourceTree = "<group>"; };
+		243C3AE1212E7B4400D3E193 /* GBGamesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGamesTableViewCell.h; sourceTree = "<group>"; };
+		243C3AE2212E7B4400D3E193 /* GBGameCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameCommentTableViewCell.h; sourceTree = "<group>"; };
+		243C3AE3212E7B4400D3E193 /* GBGameHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBGameHeaderView.h; sourceTree = "<group>"; };
+		243C3AE4212E7B4400D3E193 /* GBGamesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGamesTableViewCell.m; sourceTree = "<group>"; };
+		243C3AE5212E7B4400D3E193 /* GBGameHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameHeaderView.m; sourceTree = "<group>"; };
+		243C3AE6212E7B4400D3E193 /* GBGameCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBGameCommentTableViewCell.m; sourceTree = "<group>"; };
+		2442ED5C212EB14C00E72877 /* GBCommentFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCommentFrame.h; sourceTree = "<group>"; };
+		2442ED5D212EB14C00E72877 /* GBCommentFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBCommentFrame.m; sourceTree = "<group>"; };
+		3A54EBC594ED368BB350983F /* Pods-GameCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameCenter/Pods-GameCenter.release.xcconfig"; sourceTree = "<group>"; };
+		4B9A926952A177FC5484A6EA /* libPods-GameCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GameCenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F398A2BFA2A963500EEF2E9C /* Pods-GameCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameCenter/Pods-GameCenter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721E0E49EDDD1497DBBB6CDC /* libPods-GameCenter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +120,10 @@
 		241E00F8212E6D2800D05D3E = {
 			isa = PBXGroup;
 			children = (
-				241E0103212E6D2800D05D3E /* GameCenter */,
+				243C3A8A212E7B4400D3E193 /* GameCenter */,
 				241E0102212E6D2800D05D3E /* Products */,
+				DACCA75B262B826572BA7963 /* Pods */,
+				B4259B35247275F9FEFFEE29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,20 +135,366 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		241E0103212E6D2800D05D3E /* GameCenter */ = {
+		243C3A8A212E7B4400D3E193 /* GameCenter */ = {
 			isa = PBXGroup;
 			children = (
-				241E0104212E6D2800D05D3E /* AppDelegate.h */,
-				241E0105212E6D2800D05D3E /* AppDelegate.m */,
-				241E0107212E6D2800D05D3E /* ViewController.h */,
-				241E0108212E6D2800D05D3E /* ViewController.m */,
-				241E010A212E6D2800D05D3E /* Main.storyboard */,
-				241E010D212E6D2800D05D3E /* Assets.xcassets */,
-				241E010F212E6D2800D05D3E /* LaunchScreen.storyboard */,
-				241E0112212E6D2800D05D3E /* Info.plist */,
-				241E0113212E6D2800D05D3E /* main.m */,
+				243C3A8B212E7B4400D3E193 /* General */,
+				243C3AAA212E7B4400D3E193 /* Resources */,
+				243C3AAE212E7B4400D3E193 /* Profile */,
+				243C3AB5212E7B4400D3E193 /* Functions */,
+				243C3ABC212E7B4400D3E193 /* BankCard */,
+				243C3AC3212E7B4400D3E193 /* AppDelegate */,
+				243C3AC6212E7B4400D3E193 /* Main */,
+				243C3ACB212E7B4400D3E193 /* Games */,
 			);
 			path = GameCenter;
+			sourceTree = "<group>";
+		};
+		243C3A8B212E7B4400D3E193 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A8C212E7B4400D3E193 /* Category */,
+				243C3A90212E7B4400D3E193 /* Base */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		243C3A8C212E7B4400D3E193 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A8D212E7B4400D3E193 /* UIView+ */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		243C3A8D212E7B4400D3E193 /* UIView+ */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A8E212E7B4400D3E193 /* UIView+Additional.m */,
+				243C3A8F212E7B4400D3E193 /* UIView+Additional.h */,
+			);
+			path = "UIView+";
+			sourceTree = "<group>";
+		};
+		243C3A90212E7B4400D3E193 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A91212E7B4400D3E193 /* ViewModel */,
+				243C3A94212E7B4400D3E193 /* View */,
+				243C3A99212E7B4400D3E193 /* Modle */,
+				243C3A9C212E7B4400D3E193 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		243C3A91212E7B4400D3E193 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A92212E7B4400D3E193 /* GBBaseViewModel.m */,
+				243C3A93212E7B4400D3E193 /* GBBaseViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		243C3A94212E7B4400D3E193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A95212E7B4400D3E193 /* GBBaseTableViewCell.h */,
+				243C3A96212E7B4400D3E193 /* GBBaseView.h */,
+				243C3A97212E7B4400D3E193 /* GBBaseTableViewCell.m */,
+				243C3A98212E7B4400D3E193 /* GBBaseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		243C3A99212E7B4400D3E193 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A9A212E7B4400D3E193 /* GBBaseModel.h */,
+				243C3A9B212E7B4400D3E193 /* GBBaseModel.m */,
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		243C3A9C212E7B4400D3E193 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A9D212E7B4400D3E193 /* TableViewDelegate */,
+				243C3AA0212E7B4400D3E193 /* GBTableViewController.h */,
+				243C3AA1212E7B4400D3E193 /* GBBaseViewController.m */,
+				243C3AA2212E7B4400D3E193 /* Tab */,
+				243C3AA5212E7B4400D3E193 /* GBTableViewController.m */,
+				243C3AA6212E7B4400D3E193 /* Nav */,
+				243C3AA9212E7B4400D3E193 /* GBBaseViewController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		243C3A9D212E7B4400D3E193 /* TableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				243C3A9E212E7B4400D3E193 /* GBBaseTableViewDelegate.h */,
+				243C3A9F212E7B4400D3E193 /* GBBaseTableViewDelegate.m */,
+			);
+			path = TableViewDelegate;
+			sourceTree = "<group>";
+		};
+		243C3AA2212E7B4400D3E193 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AA3212E7B4400D3E193 /* GBTabBarController.h */,
+				243C3AA4212E7B4400D3E193 /* GBTabBarController.m */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		243C3AA6212E7B4400D3E193 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AA7212E7B4400D3E193 /* GBNavigationController.m */,
+				243C3AA8212E7B4400D3E193 /* GBNavigationController.h */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		243C3AAA212E7B4400D3E193 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AAB212E7B4400D3E193 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		243C3AAE212E7B4400D3E193 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AAF212E7B4400D3E193 /* ViewModel */,
+				243C3AB0212E7B4400D3E193 /* Controller */,
+				243C3AB3212E7B4400D3E193 /* Model */,
+				243C3AB4212E7B4400D3E193 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		243C3AAF212E7B4400D3E193 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		243C3AB0212E7B4400D3E193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AB1212E7B4400D3E193 /* GBProfilViewController.m */,
+				243C3AB2212E7B4400D3E193 /* GBProfilViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		243C3AB3212E7B4400D3E193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243C3AB4212E7B4400D3E193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		243C3AB5212E7B4400D3E193 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AB6212E7B4400D3E193 /* ViewModel */,
+				243C3AB7212E7B4400D3E193 /* Controller */,
+				243C3ABA212E7B4400D3E193 /* Model */,
+				243C3ABB212E7B4400D3E193 /* View */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		243C3AB6212E7B4400D3E193 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		243C3AB7212E7B4400D3E193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AB8212E7B4400D3E193 /* GBFunctionViewController.m */,
+				243C3AB9212E7B4400D3E193 /* GBFunctionViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		243C3ABA212E7B4400D3E193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243C3ABB212E7B4400D3E193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		243C3ABC212E7B4400D3E193 /* BankCard */ = {
+			isa = PBXGroup;
+			children = (
+				243C3ABD212E7B4400D3E193 /* ViewModel */,
+				243C3ABE212E7B4400D3E193 /* Controller */,
+				243C3AC1212E7B4400D3E193 /* Model */,
+				243C3AC2212E7B4400D3E193 /* View */,
+			);
+			path = BankCard;
+			sourceTree = "<group>";
+		};
+		243C3ABD212E7B4400D3E193 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		243C3ABE212E7B4400D3E193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				243C3ABF212E7B4400D3E193 /* GBBankCardViewController.m */,
+				243C3AC0212E7B4400D3E193 /* GBBankCardViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		243C3AC1212E7B4400D3E193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243C3AC2212E7B4400D3E193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		243C3AC3212E7B4400D3E193 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AC4212E7B4400D3E193 /* AppDelegate.h */,
+				243C3AC5212E7B4400D3E193 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		243C3AC6212E7B4400D3E193 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AAC212E7B4400D3E193 /* LaunchScreen.storyboard */,
+				243C3AC7212E7B4400D3E193 /* GBProjectCom.h */,
+				243C3AC8212E7B4400D3E193 /* main.m */,
+				243C3AC9212E7B4400D3E193 /* GameCenter.pch */,
+				243C3ACA212E7B4400D3E193 /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		243C3ACB212E7B4400D3E193 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				243C3ACC212E7B4400D3E193 /* ViewModel */,
+				243C3AD1212E7B4400D3E193 /* Controller */,
+				243C3ADB212E7B4400D3E193 /* Model */,
+				243C3AE0212E7B4400D3E193 /* View */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		243C3ACC212E7B4400D3E193 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				243C3ACF212E7B4400D3E193 /* GBGameCommentViewModel.h */,
+				243C3ACE212E7B4400D3E193 /* GBGameCommentViewModel.m */,
+				243C3AD0212E7B4400D3E193 /* GBGameViewModel.h */,
+				243C3ACD212E7B4400D3E193 /* GBGameViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		243C3AD1212E7B4400D3E193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AD4212E7B4400D3E193 /* GamesTableViewDelegate */,
+				243C3AD9212E7B4400D3E193 /* GBGamesViewController.h */,
+				243C3AD3212E7B4400D3E193 /* GBGamesViewController.m */,
+				243C3ADA212E7B4400D3E193 /* GBGameDetailViewController.h */,
+				243C3AD2212E7B4400D3E193 /* GBGameDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		243C3AD4212E7B4400D3E193 /* GamesTableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AD5212E7B4400D3E193 /* GBGameCommentTableDelegate.h */,
+				243C3AD8212E7B4400D3E193 /* GBGameCommentTableDelegate.m */,
+				243C3AD6212E7B4400D3E193 /* GBGamesTableViewDelegate.h */,
+				243C3AD7212E7B4400D3E193 /* GBGamesTableViewDelegate.m */,
+			);
+			path = GamesTableViewDelegate;
+			sourceTree = "<group>";
+		};
+		243C3ADB212E7B4400D3E193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				243C3ADF212E7B4400D3E193 /* GBGameCommentModel.h */,
+				243C3ADD212E7B4400D3E193 /* GBGameCommentModel.m */,
+				243C3ADE212E7B4400D3E193 /* GBGameModel.h */,
+				243C3ADC212E7B4400D3E193 /* GBGameModel.m */,
+				2442ED5C212EB14C00E72877 /* GBCommentFrame.h */,
+				2442ED5D212EB14C00E72877 /* GBCommentFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243C3AE0212E7B4400D3E193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				243C3AE1212E7B4400D3E193 /* GBGamesTableViewCell.h */,
+				243C3AE2212E7B4400D3E193 /* GBGameCommentTableViewCell.h */,
+				243C3AE3212E7B4400D3E193 /* GBGameHeaderView.h */,
+				243C3AE4212E7B4400D3E193 /* GBGamesTableViewCell.m */,
+				243C3AE5212E7B4400D3E193 /* GBGameHeaderView.m */,
+				243C3AE6212E7B4400D3E193 /* GBGameCommentTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4259B35247275F9FEFFEE29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A926952A177FC5484A6EA /* libPods-GameCenter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DACCA75B262B826572BA7963 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F398A2BFA2A963500EEF2E9C /* Pods-GameCenter.debug.xcconfig */,
+				3A54EBC594ED368BB350983F /* Pods-GameCenter.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +504,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 241E0117212E6D2800D05D3E /* Build configuration list for PBXNativeTarget "GameCenter" */;
 			buildPhases = (
+				851E34B2EC5EF363B5740811 /* [CP] Check Pods Manifest.lock */,
 				241E00FD212E6D2800D05D3E /* Sources */,
 				241E00FE212E6D2800D05D3E /* Frameworks */,
 				241E00FF212E6D2800D05D3E /* Resources */,
+				624BFF63DD195082A5A9D1C2 /* [CP] Embed Pods Frameworks */,
+				8C2703F5430D541DAA77E6FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,40 +558,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241E0111212E6D2800D05D3E /* LaunchScreen.storyboard in Resources */,
-				241E010E212E6D2800D05D3E /* Assets.xcassets in Resources */,
-				241E010C212E6D2800D05D3E /* Main.storyboard in Resources */,
+				243C3CDD212E7B4600D3E193 /* Assets.xcassets in Resources */,
+				243C3CDE212E7B4600D3E193 /* LaunchScreen.storyboard in Resources */,
+				243C3CE4212E7B4600D3E193 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		624BFF63DD195082A5A9D1C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameCenter/Pods-GameCenter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851E34B2EC5EF363B5740811 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameCenter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C2703F5430D541DAA77E6FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GameCenter/Pods-GameCenter-resources.sh",
+				"${PODS_ROOT}/Parse/Parse/Resources/en.lproj",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameCenter/Pods-GameCenter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		241E00FD212E6D2800D05D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241E0109212E6D2800D05D3E /* ViewController.m in Sources */,
-				241E0114212E6D2800D05D3E /* main.m in Sources */,
-				241E0106212E6D2800D05D3E /* AppDelegate.m in Sources */,
+				243C3CDA212E7B4600D3E193 /* GBTabBarController.m in Sources */,
+				243C3CD4212E7B4600D3E193 /* GBBaseViewModel.m in Sources */,
+				243C3CD7212E7B4600D3E193 /* GBBaseModel.m in Sources */,
+				243C3CDF212E7B4600D3E193 /* GBProfilViewController.m in Sources */,
+				243C3CE8212E7B4600D3E193 /* GBGamesViewController.m in Sources */,
+				243C3CDB212E7B4600D3E193 /* GBTableViewController.m in Sources */,
+				243C3CEB212E7B4600D3E193 /* GBGameModel.m in Sources */,
+				243C3CD8212E7B4600D3E193 /* GBBaseTableViewDelegate.m in Sources */,
+				243C3CE2212E7B4600D3E193 /* AppDelegate.m in Sources */,
+				243C3CEE212E7B4600D3E193 /* GBGameHeaderView.m in Sources */,
+				243C3CE6212E7B4600D3E193 /* GBGameCommentViewModel.m in Sources */,
+				243C3CD9212E7B4600D3E193 /* GBBaseViewController.m in Sources */,
+				243C3CEF212E7B4600D3E193 /* GBGameCommentTableViewCell.m in Sources */,
+				243C3CE0212E7B4600D3E193 /* GBFunctionViewController.m in Sources */,
+				243C3CEA212E7B4600D3E193 /* GBGameCommentTableDelegate.m in Sources */,
+				243C3CDC212E7B4600D3E193 /* GBNavigationController.m in Sources */,
+				243C3CE3212E7B4600D3E193 /* main.m in Sources */,
+				243C3CE5212E7B4600D3E193 /* GBGameViewModel.m in Sources */,
+				243C3CEC212E7B4600D3E193 /* GBGameCommentModel.m in Sources */,
+				243C3CD5212E7B4600D3E193 /* GBBaseTableViewCell.m in Sources */,
+				2442ED5E212EB14C00E72877 /* GBCommentFrame.m in Sources */,
+				243C3CED212E7B4600D3E193 /* GBGamesTableViewCell.m in Sources */,
+				243C3CD6212E7B4600D3E193 /* GBBaseView.m in Sources */,
+				243C3CD3212E7B4600D3E193 /* UIView+Additional.m in Sources */,
+				243C3CE9212E7B4600D3E193 /* GBGamesTableViewDelegate.m in Sources */,
+				243C3CE7212E7B4600D3E193 /* GBGameDetailViewController.m in Sources */,
+				243C3CE1212E7B4600D3E193 /* GBBankCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		241E010A212E6D2800D05D3E /* Main.storyboard */ = {
+		243C3AAC212E7B4400D3E193 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				241E010B212E6D2800D05D3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		241E010F212E6D2800D05D3E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				241E0110212E6D2800D05D3E /* Base */,
+				243C3AAD212E7B4400D3E193 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -276,11 +775,14 @@
 		};
 		241E0118212E6D2800D05D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F398A2BFA2A963500EEF2E9C /* Pods-GameCenter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3B7GZ798CK;
-				INFOPLIST_FILE = GameCenter/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameCenter/Main/GameCenter.pch";
+				INFOPLIST_FILE = GameCenter/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GameCenter.GameCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,11 +792,14 @@
 		};
 		241E0119212E6D2800D05D3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A54EBC594ED368BB350983F /* Pods-GameCenter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3B7GZ798CK;
-				INFOPLIST_FILE = GameCenter/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameCenter/Main/GameCenter.pch";
+				INFOPLIST_FILE = GameCenter/Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GameCenter.GameCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";

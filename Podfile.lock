@@ -3,16 +3,21 @@ PODS:
   - Masonry (1.0.2)
   - Parse (1.14.4):
     - Bolts/Tasks (~> 1.8)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
 
 DEPENDENCIES:
   - Masonry
   - Parse
+  - SDWebImage
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   Parse: b0aa91d2c435e53d4a9af26e741e014c9b35c42e
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 2fa758a80d7d51280a0c5599e0974475ddc5cd4d
+PODFILE CHECKSUM: 48ae433b72be13a2ba2702fc04fa209df6ea4b75
 
 COCOAPODS: 1.4.0
